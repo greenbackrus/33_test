@@ -1,0 +1,10 @@
+%h2 Добавление курса
+%form{'role'=>"form"}
+  .form-group
+    %label{'for' => "title"} Название
+    %input.form-control{'type' => "text", 'id' => "title", 'ng-model' => "course.title"}
+  .form-group
+    %label{'for' => "lections"} Разделы курса
+    %textarea.form-control{'id' => "lections", 'rows' => "10", 'ng-model' => "course.lections"}
+    %small Перечислите разделы курса. Каждый раздел с новой строки.
+  %button.btn.btn-default{'type' => "submit", 'ng-click' => "coursesCtrl.createCourse(course)"} Добавить

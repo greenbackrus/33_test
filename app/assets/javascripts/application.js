@@ -1,0 +1,11 @@
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require underscore
+//= require angular
+//= require angular-ui-router
+//= require restangular
+//= require angular-rails-templates
+//= require bootstrap
+//= require_tree ./templates 
+//= require_tree .

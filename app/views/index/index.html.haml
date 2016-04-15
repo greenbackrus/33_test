@@ -1,0 +1,12 @@
+.navbar.navbar-default
+  %a.navbar-brand
+    COURSES
+  %ul.nav.navbar-nav
+    %li{'ui-sref-active' => "active"}
+      %a{'href' => "", 'ui-sref' => "courses.index"} Курсы
+    %li{'ui-sref-active' => "active"}
+      %a{'href' => ""} Студенты
+  %ul.nav.navbar-nav.navbar-right
+    %li
+      %a{'href' => ""} Владимир Бизонов
+%div{'ui-view' => true}

@@ -1,0 +1,6 @@
+%h2 Редактирование домашнего задания
+%form{'role'=>"form"}
+  .form-group
+    %label{'for' => "text"} Текст задания
+    %textarea.form-control{'id' => "text", 'rows' => "20", 'ng-model' => "lection.homework"}
+  %button.btn.btn-default{'type' => "submit", 'ng-click' => "coursesCtrl.updateHomework(course)"} Добавить
