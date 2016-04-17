@@ -8,9 +8,12 @@ class CoursesController < ApplicationController
     render json: course, status: 200
   end
   def create
-    course = Course.new(course_params)
+    course = Course.new(title: course_params[:title])
     if course.save
+      # если удалось сохранить курс, то вызываем метод, создающий объекты дисциплин для каждого курса
+      # получая наименования, из строки
       render json: course, status: 201, location: course
+      course.create_disciplines(course_params[:disciplines])
     else
        render json: course.errors, status: 422
     end
@@ -32,6 +35,6 @@ class CoursesController < ApplicationController
   end
   private
     def course_params
-      params.require(:course).permit(:title, :lections)
+      params.require(:course).permit(:title, :disciplines)
     end
 end

@@ -1,1 +1,25 @@
-show.html.haml
+.row
+  %h2 {{coursesCtrl.course.title}}
+.row
+  .col-md-9
+    %h3 1 неделя
+    .form-group{'ng-repeat' => "lesson in coursesCtrl.lessons | filter: {'week': '1'}" }
+      .row
+        .col-md-6
+          %label{'for' => "title"} {{coursesCtrl.disciplines.title | filter: {'id': lesson.id} }}
+        .col-md-2
+          %a{'href' => "#"} Лекция
+        .col-md-2
+          %a{'href' => "#"} Задание
+        .col-md-2
+          %a{'href' => "#"} Тест
+        %input.form-control{'type' => "text", 'id' => "title", 'ng-model' => ""}
+    %a{'href' => "#"} + Добавить неделю
+  .col-md-3
+    %h3 Наборы
+    %p 
+      %a 1 сентября 2016
+    %p 
+      %a 1 апреля 2017
+    %p 
+      %a 1 мая 2017

@@ -2,4 +2,4 @@
   Курсы 
   %a.pull-right.big_text{'href' => "", 'ui-sref' => "courses.create"} +
 %p{'ng-repeat' => "course in coursesCtrl.courses"} 
-  %a{'ui-sref' => "courses.show({ id: course.id })"} {{course.title}}
+  %a{'href' => "", 'ng-click' => "coursesCtrl.showCourse(course)"} {{course.title}}

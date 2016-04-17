@@ -2,9 +2,9 @@
 %form{'role'=>"form"}
   .form-group
     %label{'for' => "title"} Название
-    %input.form-control{'type' => "text", 'id' => "title", 'ng-model' => "course.title"}
+    %input.form-control{'type' => "text", 'id' => "title", 'ng-model' => "course.course.title"}
   .form-group
-    %label{'for' => "lections"} Разделы курса
-    %textarea.form-control{'id' => "lections", 'rows' => "10", 'ng-model' => "course.lections"}
+    %label{'for' => "disciplines"} Разделы курса
+    %textarea.form-control{'id' => "disciplines", 'rows' => "10", 'ng-model' => "course.course.disciplines"}
     %small Перечислите разделы курса. Каждый раздел с новой строки.
   %button.btn.btn-default{'type' => "submit", 'ng-click' => "coursesCtrl.createCourse(course)"} Добавить
