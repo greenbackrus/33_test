@@ -1,28 +1,12 @@
-== README
+Тестовое задание по вакансии.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Верстка по макету (прототип) из 6 страниц:
+ - Список курсов;
+ - Список лекций в курсе, с разбивкой по неделям;
+ - Добавление курса с перечислением дисциплин в отдельном поле ввода;
+ - Редактирование домашнего задания;
+ - Редактирование текста лекции;
+ - Страница-заглушка редактирования теста с текстом "Здесь пока ничего нет :-)".
+ 
+Часть системы дистанционного обучения.
+Возможность создавать курс, в котором несколько дисциплин, для каждой имеется некоторое количество лекций, разбитое по неделям.
